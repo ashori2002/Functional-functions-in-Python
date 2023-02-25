@@ -21,3 +21,11 @@ myList_new1 = list(filter(odd , myList))
 """
 myList_new1 = list(filter(lambda num : num % 2 == 0 , myList))
 print(myList_new1)
+
+
+###################################################################
+
+
+from functools import reduce
+myList_new2 = reduce(lambda num1 , num2 : num1 + num2 , myList)
+print(myList_new2)
